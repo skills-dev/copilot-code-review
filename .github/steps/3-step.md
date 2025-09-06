@@ -56,17 +56,51 @@ Let's tailor Copilot's review by creating custom instructions.
 ### ⌨️ Activity: Add focused instructions
 
 1. Create `.github/instructions/frontend-review.instructions.md` for frontend-specific guidelines:
-
-   - Add front matter that targets UI-related files: `*.html`, `*.css`, `*.js`
-   - Include guidelines for accessibility, responsive design, and user experience
+   
+   - Add front matter that targets UI-related files:
+   
+     ```yaml
+     ---
+     applicable_files:
+       - "*.html"
+       - "*.css" 
+       - "*.js"
+     ---
+     ```
+   
+   - Include guidelines for accessibility, responsive design, and user experience. For example:
+   
+     ```markdown
+     ## Frontend Review Guidelines
+     - Check for proper accessibility attributes (alt text, aria labels)
+     - Ensure responsive design works on mobile devices
+     - Validate HTML structure and semantic elements
+     ```
 
 1. Create `.github/instructions/backend-review.instructions.md` for server-side guidelines:
-   - Add front matter that targets files in the `backend/` directory and `*.py` files
-   - Include guidelines for API design, database security, and performance
+   
+   - Add front matter that targets backend files:
+   
+     ```yaml
+     ---
+     applicable_files:
+       - "backend/**/*"
+       - "*.py"
+     ---
+     ```
+   
+   - Include guidelines for API design, database security, and performance. For example:
+   
+     ```markdown
+     ## Backend Review Guidelines
+     - Validate input sanitization and SQL injection prevention
+     - Check for proper error handling and logging
+     - Review API endpoint security and authentication
+     ```
 
 ### ⌨️ Activity: Test the instructions
 
-1. Create a new branch and make changes that affect both backend and frontend components
+1. Create a new branch and make changes that affect both backend and frontend components (for example, add a new HTML form and a corresponding Python route to handle it)
 
 1. Create a new pull request and request a Copilot review to test the custom instructions
 

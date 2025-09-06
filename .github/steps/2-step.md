@@ -22,7 +22,7 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 
 ### ⌨️ Activity: Request a review
 
-1. In VS Code, create a new branch and add another feature to the activities website without doing a local review first
+1. In VS Code, create a new branch from main and add another feature to the activities website (different from Step 1) without doing a local review first
 1. Push your changes to GitHub
 1. Navigate to your repository on GitHub.com and start a new pull request
 1. In the pull request, click on the **Reviewers** menu in the top right
