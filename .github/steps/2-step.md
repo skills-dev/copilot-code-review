@@ -34,6 +34,8 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 
 1. Wait a moment for Copilot to review the changes and add comments to your pull request.
 
+1. With the review requested, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+
 > [!TIP]
 > You can also use the GitHub CLI to assign Copilot as a reviewer!
 >
