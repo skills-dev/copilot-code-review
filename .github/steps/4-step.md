@@ -25,52 +25,87 @@ For more information, see the [repository rulesets documentation](https://docs.g
 
 ### ⌨️ Activity: Create a repository ruleset
 
-1. Navigate to your repository's **Settings** tab on GitHub.com
+1. In the top navigation, select the **Settings** tab.
 
-1. Select **Rules** → **Rulesets** in the left sidebar
+1. In the left navigation, expand **Rules** and select **Rulesets**.
 
-1. Click **New ruleset** → **New branch ruleset**
+1. Click **New ruleset** and select **New branch ruleset**.
 
-1. Configure the ruleset:
+1. Set the ruleset name and status:
 
-   - Set the **Ruleset name** to "Require Copilot Reviews"
-   - Set **Enforcement Status** to **Active**
+   - **Ruleset Name**: `Require Copilot Reviews`
+   - **Enforcement Status**: `Active`
 
-1. Under **Target branches**, configure branch coverage:
+1. Under **Target branches**, add protections for the `main` branch:
 
-   - Select **Add target** → **Include default branch**
-   - This will target your `main` branch
+   1. Click **Add target** and **Include default branch**.
+   1. Click **Add target** and **Include by pattern**.
+   1. Enter `main` and click the **Add inclusion pattern** button.
 
-1. Configure pull request requirements:
+   > 💡 **Tip**: Make sure you are triggering reviews at the right times in development. Both too early and too later will provide unhelpful results.
 
-   - Enable **Require a pull request before merging**
-   - Check **Request pull request review from Copilot**
-   - Optionally enable **Require conversation resolution before merging** for better workflow
+1. Under **Rules**, enable the following options:
 
-1. Click **Create** to activate the ruleset
+   - **Require a pull request before merging**: ☑️
+   - **Automatically request Copilot code review**: ☑️
+   - **Require conversation resolution before merging**: ☑️
 
-### ⌨️ Activity: Test automatic review
+1. Scroll to the bottom and click the **Create** button.
 
-1. Create a new branch from main in VS Code or on GitHub
+### ⌨️ Activity: Verify required review
 
-1. Make changes to the codebase - you can add a new feature, fix an issue, or improve existing functionality
+1. Navigate back to the pull request.
 
-1. Push your changes and create a pull request
+1. Notice that the merge button is now disabled.
 
-1. Notice that Copilot is automatically assigned as a reviewer - you should see it in the reviewers section
+1. Resolve the remaining feedback from Copilot.
 
-1. Wait for Copilot's automatic review and examine the feedback provided
+1. Merge the pull request.
 
-1. Address any suggestions from Copilot's review
+### ⌨️ Activity: (optional) Test required review
 
-1. Observe how the automated review process helps maintain code quality without manual intervention
+1. Create a new branch with the following name.
 
+   ```txt
+   enable-editing-announcements
+   ```
+
+1. Ask copilot to upgrade our new Announcements feature.
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > The Announcement feature should not be hard coded.
+   >
+   > - Make it driven from the database.
+   > - Allow signed in teachers to create and modify announcements.
+   > - Announcements require an expiration date. Start date is optional.
+   > - Add an example message to the database initialization.
+   > ```
+
+1. (optional) Run the application to test the changes.
+
+1. (optional) Before committing the changes, ask for a local review in VS Code.
+
+1. Commit and push the changes.
+
+1. Create a new Pull Request with the following details.
+
+   - **compare:** `enable-editing-announcements`
+   - **target:** `main`
+   - **title:** `Enable Editing Announcements`
+
+1. Notice that Copilot was automatically added as a reviewer. Wait a moment for feedback.
+
+1. (optional) Address any comments from Copilot.
+
+1. Merge the pull request.
+
+<!--
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- Make sure you have admin permissions on the repository to create rulesets
-- If you don't see the Rulesets option, check that you're in the repository Settings (not your account settings)
-- The ruleset will only affect new pull requests created after it's activated
-- You can edit or disable the ruleset if needed from the same Rules → Rulesets page
+- ???
 
 </details>
+-->
