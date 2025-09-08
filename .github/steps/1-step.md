@@ -17,35 +17,95 @@ Key features:
 
 This immediate feedback helps you identify and fix issues early in your development process, making your code more robust before it even reaches a pull request.
 
-### ⌨️ Activity: Get to know our extracurricular activities site
+## ⌨️ Activity: Get to know the extracurricular activities site
 
-1. Start the codespace if it's not already running
-1. Explore the project structure and familiarize yourself with the files in the `src/` directory
-1. Open the terminal and run the web application to see the current functionality:
+In [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot/) exercise, we developed on the Extracurricular Activities website. Since this is based on the same project, let's take a moment to understand it.
 
-   ```bash
-   cd src
-   python app.py
-   ```
+1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
 
-1. Open the simple browser to view the running application
-1. Take note of the current features and functionality
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
+
+1. Wait some time for the environment to be prepared. It will automatically install all requirements and services.
+
+1. Validate the **GitHub Copilot** and **Python** extensions are installed and enabled.
+
+   <img width="300" alt="copilot extension for VS Code" src="https://github.com/user-attachments/assets/ef1ef984-17fc-4b20-a9a6-65a866def468" /><br/>
+   <img width="300" alt="python extension for VS Code" src="https://github.com/user-attachments/assets/3040c0f5-1658-47e2-a439-20504a384f77" />
+
+1. Try running the application. In the left sidebar, select the **Run and Debug** tab and then press the **Start Debugging** icon.
+
+   <img width="300" alt="run and debug" src="https://github.com/user-attachments/assets/50b27f2a-5eab-4827-9343-ab5bce62357e" />
+
+   <details>
+   <summary>🤷 Having trouble?</summary><br/>
+
+   If the **Run and Debug** area is empty, try reloading VS Code: Open the command palette (`Ctrl`+`Shift`+`P`) and search for `Developer: Reload Window`.
+
+   <img width="300" alt="empty run and debug panel" src="https://github.com/user-attachments/assets/0dbf1407-3a97-401a-a630-f462697082d6" />
+
+   </details>
+
+1. Use the **Ports** tab to find the webpage address, open it, and verify it is running.
+
+   <img width="350" alt="ports tab" src="https://github.com/user-attachments/assets/8d24d6b5-202d-4109-8174-2f0d1e4d8d44" />
+
+   ![Screenshot of Mergington High School WebApp](https://github.com/user-attachments/assets/5e1e7c1e-1b0e-4378-a5af-a266763e6544)
 
 ### ⌨️ Activity: Ask Copilot for a review
 
-1. Make some changes to the code - you can add a new feature or modify existing functionality (for example, update some text in the HTML or add a new route to the Flask app)
-1. Open Copilot Chat in VS Code (use the chat icon in the Activity Bar or press `Ctrl+Shift+I`)
-1. Ask Copilot to review your uncommitted changes by typing something like: `@workspace Please review my uncommitted changes`
-1. Review Copilot's suggestions and feedback
-1. Address any suggestions that make sense for your changes
-1. Commit and push your changes to trigger the next step
+Lets add a simple banner feature for teachers to make announcements and then ask Copilot for feedback.
+
+1. In VS Code, create a new branch with the following name.
+
+   ```txt
+   add-announcement-banner
+   ```
+
+1. Open the `src/index.html` file. Add the following after the `<body>` tag.
+
+   ```html
+   <div class="announcement-banner">
+     📢 Activity registration is open until the end of the month. Don't lose your spot!
+   </div>
+   ```
+
+1. Open the `src/static/styles.css` file. Add the following to the end.
+
+   ```css
+   .announcement-banner {
+     background-color: #4caf50;
+     color: white;
+     text-align: center;
+     padding: 15px;
+     font-weight: bold;
+   }
+   ```
+
+1. In VS Code, open the source control panel and make note of the uncommitted changes.
+
+1. Hover over the **Changes** section to show various icons. Click the **Code Review** button.
+
+   <img width="500" alt="screenshot of source control panel with arrow pointing at button for copilot review" src="(pending)"/>
+
+   > 💡 **TIP:** There are 3 levels of review available: `unstaged changes` and `staged changes` and `uncommitted changes`
+
+1. In VS Code, open the **Problems** panel to find a list of all comments from Copilot.
+
+   <img width="500" alt="screenshot of problems control panel with comments from Copilot" src="(pending)"/>
+
+1. Use the **Accept** or **Reject** buttons to address Copilot's feedback.
+
+   <img width="500" alt="screenshot of inline comment with buttons to address feedback" src="(pending)"/>
+
+1. Commit and push the changes.
+
+1. With the changes pushed, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- Make sure you have GitHub Copilot enabled in VS Code
-- Ensure you've made actual changes to files before asking for a review
-- If Copilot doesn't see your changes, try saving the files first
-- Remember that Copilot reviews uncommitted changes, so don't commit before asking for the review
+- Copilot Review in VS Code only considers uncommitted changes. Don't commit before asking for the review.
+- If Copilot doesn't provide review feedback, make sure to click the correct review button for the grouping (unstaged, staged, uncommitted).
+- If Copilot doesn't see your changes, make sure to save the files first.
 
 </details>
