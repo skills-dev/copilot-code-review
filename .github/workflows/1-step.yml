@@ -3,7 +3,7 @@ name: Step 1
 on:
   push:
     branches:
-      - main
+      - add-announcement-banner
 
 permissions:
   contents: read
