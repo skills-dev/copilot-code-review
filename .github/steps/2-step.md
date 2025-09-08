@@ -2,7 +2,7 @@
 
 Now that you've tested Copilot's local review capabilities and made some changes to improve the activities website, it's time to create a pull request and get Copilot's feedback on your proposed changes before they're merged into the main branch, just like one of the other teachers would. Let's see how Copilot reviews changes in the pull request process.
 
-### 📖 Theory: GitHub Copilot Pull Request Reviews
+### 📖 Theory: Pull Request Code Reviews
 
 GitHub Copilot analyzes your code and provides intelligent feedback with actionable suggestions you can apply instantly. Each code review consumes one Premium Request Unit (PRU) from the requester.
 
@@ -22,13 +22,17 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 
 ### ⌨️ Activity: Request a review
 
-1. In VS Code, create a new branch from main and add another feature to the activities website (different from Step 1) without doing a local review first
-1. Push your changes to GitHub
-1. Navigate to your repository on GitHub.com and start a new pull request
-1. In the pull request, click on the **Reviewers** menu in the top right
-1. Select **Copilot** from the list of available reviewers
-1. Wait a moment for Copilot to review the changes
-1. Review Copilot's suggestions and comments on your pull request
+1. Open a another tab and open this repository.
+
+1. Create a new pull request with the following details.
+
+   - **compare:** `add-announcement-banner`
+   - **target:** `main`
+   - **title:** `Add Announcement Banner`
+
+1. In the top right, find the **Reviewers** menu. Click on it to show a list of available reviewers and select **Copilot**.
+
+1. Wait a moment for Copilot to review the changes and add comments to your pull request.
 
 > [!TIP]
 > You can also use the GitHub CLI to assign Copilot as a reviewer!
@@ -37,6 +41,11 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 > gh pr edit <PR_NUMBER> --add-reviewer "@copilot"
 > ```
 
+### ⌨️ Activity: (optional) Implement Copilot's feedback
+
+1. (optional) Review Copilot's suggestions and implement them.
+
+<!--
 ### ⌨️ Activity: Request another review
 
 1. Based on the existing sample project, make some intentional changes that might trigger feedback:
@@ -47,6 +56,7 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 1. In the pull request reviewers menu, click the refresh icon next to Copilot's name to request a new review
 1. Wait for Copilot to share additional comments on the pull request
 1. Compare the new feedback with previous suggestions to see how Copilot adapts
+1. -->
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
