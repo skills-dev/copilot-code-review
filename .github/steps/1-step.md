@@ -63,7 +63,7 @@ Lets add a simple banner feature for teachers to make announcements and then ask
    add-announcement-banner
    ```
 
-1. Open the `src/index.html` file. Add the following after the `<body>` tag.
+1. Open the `src/static/index.html` file. Add the following after the `<body>` tag.
 
    ```html
    <div class="announcement-banner">
@@ -83,7 +83,13 @@ Lets add a simple banner feature for teachers to make announcements and then ask
    }
    ```
 
+1. (optional) Refresh the running app to see the change.
+
+   <img width="400" alt="screenshot of site with announcement banner" src="1a.png"/>
+
 1. In VS Code, open the source control panel and make note of the uncommitted changes.
+
+   <img width="300" alt="screenshot of site with announcement banner" src="1b.png"/>
 
 1. Hover over the **Changes** section to show various icons. Click the **Code Review** button.
 
@@ -91,17 +97,17 @@ Lets add a simple banner feature for teachers to make announcements and then ask
 
    > 💡 **TIP:** There are 3 levels of review available: `unstaged changes` and `staged changes` and `uncommitted changes`
 
-1. In VS Code, open the **Problems** panel to find a list of all comments from Copilot.
+1. In VS Code, open the **Comments** panel to find a list of review feedback from Copilot.
 
-   <img width="500" alt="screenshot of problems control panel with comments from Copilot" src="(pending)"/>
+   <img width="300" alt="screenshot of problems control panel with comments from Copilot" src="1c.png"/>
 
-1. Use the **Accept** or **Reject** buttons to address Copilot's feedback.
+1. Use the **Apply** or **Discard** buttons to address Copilot's feedback.
 
-   <img width="500" alt="screenshot of inline comment with buttons to address feedback" src="(pending)"/>
+   <img width="300" alt="screenshot of inline comment with buttons to address feedback" src="1d.png"/>
 
-1. Commit and push the changes.
+1. Commit and push the Announcement related changes.
 
-1. With the changes pushed, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+1. With your changes pushed, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
