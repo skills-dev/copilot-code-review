@@ -1,12 +1,14 @@
 ## Step 1: Ask for a Review in VS Code
 
-Word has spread about the activities website, and now multiple teachers want to help develop new features. This is great, but your time is limited and if you don't have time to review changes, you fear the application will become messy. To scale your feedback availability, let's implement GitHub Copilot Code Review!
+In the [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot/) exercise, we developed the Extracurricular Activities website. Let's continue that journey.
 
-Before you start implementing Copilot Code Review across the entire school project, you want to understand how it works locally in VS Code. This will help you understand how to set it up and ensure all teacher-collaborators receive consistent feedback when they start contributing.
+Word has spread about the activities website, and now multiple teachers want to help develop new features. This is great, but your energy is limited and if you don't have time to review changes, you fear the application will become messy. To scale your "review" availability, let's implement **GitHub Copilot code review**!
+
+Before we implement automated code reviews with Copilot, it makes sense to see try it locally in VS Code. This will help us better understand it and ensure all teacher-collaborators receive consistent feedback when they start contributing.
 
 ### 📖 Theory: GitHub Copilot Local Code Review
 
-GitHub Copilot can review your code directly in VS Code, providing immediate feedback on uncommitted changes. This local review capability allows developers to catch issues before they even reach version control, improving code quality from the start.
+GitHub Copilot can review your code directly in VS Code, providing immediate feedback on uncommitted changes. It even adds comments similar to the feedback in a pull request! This local review capability allows developers to catch issues before they even reach version control, improving code quality from the start. And maybe catch those embarrassing typos! 😅
 
 Key features:
 
@@ -19,7 +21,7 @@ This immediate feedback helps you identify and fix issues early in your developm
 
 ## ⌨️ Activity: Get to know the extracurricular activities site
 
-In [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot/) exercise, we developed on the Extracurricular Activities website. Since this is based on the same project, let's take a moment to understand it.
+Before we start developing and reviewing, let's take a moment to understand the current site.
 
 1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
 
