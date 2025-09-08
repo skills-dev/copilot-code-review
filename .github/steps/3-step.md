@@ -8,8 +8,8 @@ Repository custom instructions allow you to provide Copilot with context about y
 
 **Types of Instructions:**
 
-- **Repository-wide instructions**: Apply to all code reviews in the repository using `.github/copilot-instructions.md`
-- **Path-specific instructions**: Apply to specific files or directories by providing glob patterns in the front matter, e.g., `.github/instructions/NAME.instructions.md`
+- **Repository-wide instructions**: Applies to all code in the repository. Ex: `.github/copilot-instructions.md`
+- **Path-specific instructions**: Applies to specific files to create focused criteria for different parts of your codebase. Ex: `.github/instructions/NAME.instructions.md`.
 
 Instructions are written in natural language with Markdown format and typically include:
 
@@ -19,101 +19,104 @@ Instructions are written in natural language with Markdown format and typically 
 - Team-specific preferences and style guides
 - Language-specific review criteria
 
+Path-specific instruction files include [YAML front matter](https://docs.github.com/en/contributing/writing-for-github-docs/using-yaml-frontmatter) with file [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns) to target specific files and directories.
+
+```yaml
+---
+applicable_files:
+  - "*.py"
+  - "backend/**/*"
+---
+```
+
 > [!TIP]
-> Repository [custom instructions](https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot) work for both VS Code reviews and pull request reviews, ensuring consistency across your development workflow.
+> Repository [custom instructions](https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot) work for both local VS Code code reviews and pull request code reviews, ensuring consistency across your development workflow.
 
 ### ⌨️ Activity: Add general instructions
 
-Let's tailor Copilot's review by creating custom instructions.
+Let's customize Copilot's review considerations by adding custom instructions.
 
-1. Create a new file called `.github/copilot-instructions.md` in your repository
+1. Ensure you are still on the `add-announcement-banner` branch.
 
-1. Add repository-wide rules that focus on the school's needs:
+1. Create a new file called `.github/copilot-instructions.md`. Add the following content.
 
    ```markdown
-   ## Security Focus
+   ## Security
 
-   - Scan for SQL injection vulnerabilities
-   - Validate input sanitization practices
-   - Check authentication and authorization
-   - Ensure student data protection and privacy
+   - Validate input sanitization practices.
+   - Search for risks that might expose user data.
+   - Prefer loading configuration and content from the database instead of hard coded content. If absolutely necessary, load it from environment variables or a non-committed config file.
 
-   ## Code Quality Standards
+   ## Code Quality
 
-   - Enforce consistent naming conventions
-   - Identify code duplication opportunities
-   - Suggest performance optimizations
-   - Require comprehensive error handling
-
-   ## Team Preferences
-
-   - Prefer explicit error handling over silent failures
-   - Recommend TypeScript over JavaScript where applicable
-   - Focus on maintainability and readability
-   - Add educational comments for learning purposes
+   - Use consistent naming conventions.
+   - Try to reduce code duplication.
+   - Prefer maintainability and readability over optimization.
+   - If a method is used a lot, try to optimize it for performance.
+   - Prefer explicit error handling over silent failures.
    ```
 
 ### ⌨️ Activity: Add focused instructions
 
-1. Create `.github/instructions/frontend-review.instructions.md` for frontend-specific guidelines:
-   
-   - Add front matter that targets UI-related files:
-   
-     ```yaml
-     ---
-     applicable_files:
-       - "*.html"
-       - "*.css" 
-       - "*.js"
-     ---
-     ```
-   
-   - Include guidelines for accessibility, responsive design, and user experience. For example:
-   
-     ```markdown
-     ## Frontend Review Guidelines
-     - Check for proper accessibility attributes (alt text, aria labels)
-     - Ensure responsive design works on mobile devices
-     - Validate HTML structure and semantic elements
-     ```
+Let's create specific Copilot's review considerations for the frontend and backend.
 
-1. Create `.github/instructions/backend-review.instructions.md` for server-side guidelines:
-   
-   - Add front matter that targets backend files:
-   
-     ```yaml
-     ---
-     applicable_files:
-       - "backend/**/*"
-       - "*.py"
-     ---
-     ```
-   
-   - Include guidelines for API design, database security, and performance. For example:
-   
-     ```markdown
-     ## Backend Review Guidelines
-     - Validate input sanitization and SQL injection prevention
-     - Check for proper error handling and logging
-     - Review API endpoint security and authentication
-     ```
+1. Create `.github/instructions/frontend.instructions.md` for and add the following content.
 
-### ⌨️ Activity: Test the instructions
+   ```markdown
+   ---
+   applicable_files:
+     - "*.html"
+     - "*.css"
+     - "*.js"
+   ---
 
-1. Create a new branch and make changes that affect both backend and frontend components (for example, add a new HTML form and a corresponding Python route to handle it)
+   ## Frontend Guidelines
 
-1. Create a new pull request and request a Copilot review to test the custom instructions
+   - Use accessibility attributes (alt text, aria labels) and color schemes.
+   - Use responsive design for compatibility with mobile devices.
+   - Validate HTML structure and semantic elements
+   ```
 
-1. Observe how Copilot's feedback differs based on the custom instructions you've provided
+1. Create `.github/instructions/backend.instructions.md` for server-side guidelines:
 
-1. Merge this pull request to trigger the next step
+```markdown
+---
+applicable_files:
+  - "backend/**/*"
+  - "*.py"
+---
+
+## Backend Guidelines
+
+- All API endpoints must be defined in the `routers` folder.
+- Load example database content from the `database.py` file.
+- Error handling is only logged on the server. Do not propagate to the frontend.
+- Ensure all APIs are explained in the documentation.
+- Verify changes in the backend are reflected in the frontend (`src/static/**`). If possible breaking changes are found, mention them to the developer.
+```
+
+1. Commit and push the changes.
+
+### ⌨️ Activity: Request another review
+
+With our new instructions defined, Copilot now has a better idea of what is important for our project. Let's ask for another review.
+
+1. Ensure the instructions are indeed committed and push to the repository.
+
+1. In the top right, find the **Reviewers** menu and **Re-request review** button next to **Copilot**. Click it and wait a moment for Copilot to add comments on the pull request.
+
+1. Observe that Copilot's feedback now differs from the previous review.
+
+1. With the review requested, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+
+### ⌨️ Activity: (optional) Implement Copilot's feedback
+
+1. (optional) Review Copilot's suggestions and implement them.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- Make sure to place instruction files in the correct `.github/` directories
-- Front matter in path-specific instructions should use proper YAML format
-- Test your instructions with small changes first to see how they affect reviews
-- Remember that custom instructions apply to both local VS Code reviews and pull request reviews
+- Make sure instruction files are in the `.github/` directory and use the `.instructions.md` file extension.
 
 </details>
+````
