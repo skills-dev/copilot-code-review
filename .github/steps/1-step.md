@@ -89,13 +89,13 @@ Lets add a simple banner feature for teachers to make announcements and then ask
 
 1. In VS Code, open the source control panel and make note of the uncommitted changes.
 
-1. Hover over the **Changes** section to show various icons. Click the **Code Review** button.
+1. Hover over the **Changes** section to show various icons. Click the **Code Review** button and wait a moment for Copilot to add comments.
 
    <img width="300" alt="screenshot of site with announcement banner" src="https://github.com/user-attachments/assets/6c52d550-d67b-4af9-99dd-e181695a4933"/>
 
    > 💡 **TIP:** There are 3 levels of review available: `unstaged changes` and `staged changes` and `uncommitted changes`
 
-1. In VS Code, open the **Comments** panel to find a list of review feedback from Copilot.
+1. Expand the **Comments** panel to find a list of review feedback from Copilot.
 
    <img width="300" alt="screenshot of problems control panel with comments from Copilot" src="https://github.com/user-attachments/assets/64c5efb6-9071-4511-b2a2-2dc85c9e929b"/>
 

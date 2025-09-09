@@ -36,7 +36,7 @@ For more information, see the [repository rulesets documentation](https://docs.g
    - **Ruleset Name**: `Require Copilot Reviews`
    - **Enforcement Status**: `Active`
 
-1. Under **Target branches**, add protections for the `main` branch:
+1. Under **Target branches**, add protections for the `main` branch.
 
    1. Click **Add target** and **Include default branch**.
    1. Click **Add target** and **Include by pattern**.
@@ -62,11 +62,17 @@ For more information, see the [repository rulesets documentation](https://docs.g
 
 1. Merge the pull request.
 
-   > 💡 **Tip**: If the **Merge pull request** button doesn't activate, check for unresolved conversations in the outdated comments.
+   > 🪧 **Note**: If the **Merge pull request** button doesn't activate, check for unresolved conversations in the outdated comments.
 
-1. With the pull requested merged, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+1. With the pull request merged, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 
 ### ⌨️ Activity: (optional) Test required review
+
+Not ready to finish yet? Are you concerned by the hard coded announcement banner?
+
+Us too! So, let's fix it! 🧑‍🚀🚀
+
+1. In VS Code, switch back to the `main` branch, pull the merged changes, and delete the `add-announcement-banner` branch.
 
 1. Create a new branch with the following name.
 
@@ -74,7 +80,7 @@ For more information, see the [repository rulesets documentation](https://docs.g
    enable-editing-announcements
    ```
 
-1. Ask copilot to upgrade our new Announcements feature.
+1. Open the Copilot Chat panel and ask Copilot to upgrade our new Announcements feature.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -82,9 +88,12 @@ For more information, see the [repository rulesets documentation](https://docs.g
    > The Announcement feature should not be hard coded.
    >
    > - Make it driven from the database.
-   > - Allow signed in teachers to create and modify announcements.
+   > - Add a button in the header that opens a dialog window. It lists all existing announcements and has controls to add/modify/delete them.
+   > - Only signed in users have access to manage announcements.
    > - Announcements require an expiration date. Start date is optional.
    > - Add an example message to the database initialization.
+   > - Don't worry about unit testing.
+   > - Make it pretty with a good UI/UX experience.
    > ```
 
 1. (optional) Run the application to test the changes.
@@ -105,13 +114,4 @@ For more information, see the [repository rulesets documentation](https://docs.g
 
 1. Merge the pull request.
 
-1. With the review requested, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
-
-<!--
-<details>
-<summary>Having trouble? 🤷</summary><br/>
-
-- ???
-
-</details>
--->
+1. Nice work! You are all done, again! 🎉

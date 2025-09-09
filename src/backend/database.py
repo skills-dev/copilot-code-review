@@ -3,7 +3,7 @@ MongoDB database configuration and setup for Mergington High School API
 """
 
 from pymongo import MongoClient
-from argon2 import PasswordHasher
+from argon2 import PasswordHasher, exceptions as argon2_exceptions
 
 # Connect to MongoDB
 client = MongoClient('mongodb://localhost:27017/')
@@ -12,10 +12,29 @@ activities_collection = db['activities']
 teachers_collection = db['teachers']
 
 # Methods
+
+
 def hash_password(password):
     """Hash password using Argon2"""
     ph = PasswordHasher()
     return ph.hash(password)
+
+
+def verify_password(hashed_password: str, plain_password: str) -> bool:
+    """Verify a plain password against an Argon2 hashed password.
+
+    Returns True when the password matches, False otherwise.
+    """
+    ph = PasswordHasher()
+    try:
+        ph.verify(hashed_password, plain_password)
+        return True
+    except argon2_exceptions.VerifyMismatchError:
+        return False
+    except Exception:
+        # For any other exception (e.g., invalid hash), treat as non-match
+        return False
+
 
 def init_database():
     """Initialize database if empty"""
@@ -24,11 +43,13 @@ def init_database():
     if activities_collection.count_documents({}) == 0:
         for name, details in initial_activities.items():
             activities_collection.insert_one({"_id": name, **details})
-            
+
     # Initialize teacher accounts if empty
     if teachers_collection.count_documents({}) == 0:
         for teacher in initial_teachers:
-            teachers_collection.insert_one({"_id": teacher["username"], **teacher})
+            teachers_collection.insert_one(
+                {"_id": teacher["username"], **teacher})
+
 
 # Initial database if empty
 initial_activities = {
@@ -172,7 +193,7 @@ initial_teachers = [
         "display_name": "Ms. Rodriguez",
         "password": hash_password("art123"),
         "role": "teacher"
-     },
+    },
     {
         "username": "mchen",
         "display_name": "Mr. Chen",
@@ -186,4 +207,3 @@ initial_teachers = [
         "role": "admin"
     }
 ]
-

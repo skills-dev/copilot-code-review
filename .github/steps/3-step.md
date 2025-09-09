@@ -4,7 +4,7 @@ The school's coding standards are crucial for maintaining the activities website
 
 ### 📖 Theory: Repository Custom Instructions
 
-Repository custom instructions allow you to provide Copilot with context about your project standards and preferences. By creating instruction files, you can ensure Copilot's suggestions consistently follow your team's conventions and focus on your specific requirements.
+Repository custom instructions allow you to provide Copilot with context about your project standards and preferences. By creating instruction files, you can ensure Copilot's suggestions consistently follow your team's conventions and focus on your specific requirements. You can even have copilot analyze your project and [generate instructions](https://code.visualstudio.com/docs/copilot/customization/custom-instructions#_generate-an-instructions-file-for-your-workspace) for you!
 
 **Types of Instructions:**
 
@@ -66,7 +66,9 @@ Let's customize Copilot's review considerations by adding custom instructions.
 
 Let's create specific Copilot's review considerations for the frontend and backend.
 
-1. Create `.github/instructions/frontend.instructions.md` for and add the following content.
+1. Create `.github/instructions/frontend.instructions.md` and add the following guidelines.
+
+   > ❗️ **Important**: Make sure to put file-specific instructions in the `.github/instructions/` folder, not the `.github/` folder.
 
    > ❗️ **Important**: Make sure to put file-specific instructions in the `.github/instructions/` folder, not the `.github/` folder.
 
@@ -82,7 +84,7 @@ Let's create specific Copilot's review considerations for the frontend and backe
    - Validate HTML structure and semantic elements
    ```
 
-1. Create `.github/instructions/backend.instructions.md` for server-side guidelines:
+1. Create `.github/instructions/backend.instructions.md` and add the following guidelines:
 
 ```markdown
 ---
@@ -100,6 +102,9 @@ applyTo: "backend/**/*,*.py"
 
 1. Commit and push the changes.
 
+> [!TIP]
+> VS Code has a built-in commands to help manage instructions. Try opening the command pallette and searching for `instructions`.
+
 ### ⌨️ Activity: Request another review
 
 With our new instructions defined, Copilot now has a better idea of what is important for our project. Let's ask for another review.
@@ -107,6 +112,10 @@ With our new instructions defined, Copilot now has a better idea of what is impo
 1. Ensure the instructions are indeed committed and push to the repository.
 
 1. In the top right, find the **Reviewers** menu and **Re-request review** button next to **Copilot**. Click it and wait a moment for Copilot to add comments on the pull request.
+
+   <img width="300" alt="screenshot of re-review button" src="https://github.com/user-attachments/assets/e6fdc77c-3323-466b-8d30-f9a8eb543f3f"/>
+
+   > 🪧 **Note:** If you are too quick after pushing new commits, you may have to wait a moment for the button to appear.
 
 1. Observe that Copilot's feedback now differs from the previous review.
 
