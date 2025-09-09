@@ -45,9 +45,8 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- Make sure you have a GitHub Copilot subscription - code reviews require a paid plan
 - If Copilot doesn't appear in the reviewers list, ensure your repository has Copilot enabled
-- Sometimes reviews take a minute or two to complete - be patient
-- You can request multiple reviews on the same pull request by clicking the refresh icon
+- If Copilot doesn't appear in the reviewers list, check your subscription plan. It is not available for free tier.
+- Sometimes reviews take a minute or two to complete.
 
 </details>

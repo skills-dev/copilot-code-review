@@ -89,7 +89,7 @@ jobs:
           vars: |
             step_number: 3
             results_table:
-              - description: "Created .github/copilot-instructions.md file"
+              - description: "Created copilot-instructions.md file"
                 passed: ${{ steps.check-copilot-instructions.outcome == 'success' }}
               - description: "Created frontend-specific instructions file"
                 passed: ${{ steps.check-frontend-instructions.outcome == 'success' }}
