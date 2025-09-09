@@ -67,7 +67,7 @@ jobs:
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v1.1.0
         with:
-          text-file: src/static/index.html
+          text-file: src/static/style.css
           keyphrase: announcement-banner
 
       - name: Update comment - step results
@@ -79,7 +79,7 @@ jobs:
           edit-mode: replace
           file: exercise-toolkit/markdown-templates/step-feedback/step-results-table.md
           vars: |
-            step_number: 2
+            step_number: 1
             results_table:
               - description: "announcement added to index.html"
                 passed: ${{ steps.check-index-html.outcome == 'success' }}
