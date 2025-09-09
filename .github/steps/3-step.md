@@ -111,7 +111,7 @@ With our new instructions defined, Copilot now has a better idea of what is impo
 
 1. In the top right, find the **Reviewers** menu and **Re-request review** button next to **Copilot**. Click it and wait a moment for Copilot to add comments on the pull request.
 
-   <img width="300" alt="screenshot of re-review button" src="3a.png"/>
+   <img width="300" alt="screenshot of re-review button" src="https://github.com/user-attachments/assets/e6fdc77c-3323-466b-8d30-f9a8eb543f3f"/>
 
    > 🪧 **Note:** If you are too quick after pushing new commits, you may have to wait a moment for the button to appear.
 
