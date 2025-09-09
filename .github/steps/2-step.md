@@ -22,15 +22,17 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 
 ### ⌨️ Activity: Request a review
 
-1. Open a another tab and open this repository.
+1. If needed, open a another tab and for this exercise repository.
 
-1. Create a new pull request with the following details.
+1. Start a new pull request. Enter the following details and click the **Create pull request** button.
 
    - **compare:** `add-announcement-banner`
    - **target:** `main`
    - **title:** `Add Announcement Banner`
 
-1. In the top right, find the **Reviewers** menu. Click on it to show a list of available reviewers and select **Copilot**.
+1. In the right-side details area, find the **Reviewers** menu. Click on the **settings icon** to show a list of available reviewers and select **Copilot**.
+
+   <img width="300" alt="screenshot of reviewers menu" src="2a.png"/>
 
 1. Wait a moment for Copilot to review the changes and add comments to your pull request.
 
