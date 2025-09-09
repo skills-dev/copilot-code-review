@@ -42,7 +42,7 @@ For more information, see the [repository rulesets documentation](https://docs.g
    1. Click **Add target** and **Include by pattern**.
    1. Enter `main` and click the **Add inclusion pattern** button.
 
-   <img width="300" alt="screenshot of target branches" src="4a.png"/>
+   <img width="300" alt="screenshot of target branches" src="https://github.com/user-attachments/assets/217f205c-7a61-4ffa-a0a6-7e76ff8d7906"/>
 
 1. Under **Rules**, enable the following options:
 
@@ -56,7 +56,7 @@ For more information, see the [repository rulesets documentation](https://docs.g
 
 1. Notice that the merge button is now disabled.
 
-   <img width="300" alt="screenshot of disabled merge button" src="4b.png"/>
+   <img width="300" alt="screenshot of disabled merge button" src="https://github.com/user-attachments/assets/28e4cb05-f09d-423d-8c77-8f0ec61c73ad"/>
 
 1. Click **Resolve conversation** for all current and outdated feedback from Copilot. It is not necessary to implement anything.
 
