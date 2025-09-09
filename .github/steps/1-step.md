@@ -1,12 +1,14 @@
 ## Step 1: Ask for a Review in VS Code
 
-Word has spread about the activities website, and now multiple teachers want to help develop new features. This is great, but your time is limited and if you don't have time to review changes, you fear the application will become messy. To scale your feedback availability, let's implement GitHub Copilot Code Review!
+In the [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot/) exercise, we developed the Extracurricular Activities website. Let's continue that journey.
 
-Before you start implementing Copilot Code Review across the entire school project, you want to understand how it works locally in VS Code. This will help you understand how to set it up and ensure all teacher-collaborators receive consistent feedback when they start contributing.
+Word has spread about the activities website, and now multiple teachers want to help develop new features. This is great, but your energy is limited and if you don't have time to review changes, you fear the application will become messy. To scale your "review" availability, let's implement **GitHub Copilot code review**!
+
+Before we implement automated code reviews with Copilot, it makes sense to see try it locally in VS Code. This will help us better understand it and ensure all teacher-collaborators receive consistent feedback when they start contributing.
 
 ### 📖 Theory: GitHub Copilot Local Code Review
 
-GitHub Copilot can review your code directly in VS Code, providing immediate feedback on uncommitted changes. This local review capability allows developers to catch issues before they even reach version control, improving code quality from the start.
+GitHub Copilot can review your code directly in VS Code, providing immediate feedback on uncommitted changes. It even adds comments similar to the feedback in a pull request! This local review capability allows developers to catch issues before they even reach version control, improving code quality from the start. And maybe catch those embarrassing typos! 😅
 
 Key features:
 
@@ -19,7 +21,7 @@ This immediate feedback helps you identify and fix issues early in your developm
 
 ## ⌨️ Activity: Get to know the extracurricular activities site
 
-In [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot/) exercise, we developed on the Extracurricular Activities website. Since this is based on the same project, let's take a moment to understand it.
+Before we start developing and reviewing, let's take a moment to understand the current site.
 
 1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
 
@@ -61,7 +63,7 @@ Lets add a simple banner feature for teachers to make announcements and then ask
    add-announcement-banner
    ```
 
-1. Open the `src/index.html` file. Add the following after the `<body>` tag.
+1. Open the `src/static/index.html` file. Add the following after the `<body>` tag.
 
    ```html
    <div class="announcement-banner">
@@ -81,25 +83,29 @@ Lets add a simple banner feature for teachers to make announcements and then ask
    }
    ```
 
+1. (optional) Refresh the running app to see the change.
+
+   <img width="400" alt="screenshot of site with announcement banner" src="https://github.com/user-attachments/assets/39de7fe0-58f2-4eba-a163-d3037b2b3b06"/>
+
 1. In VS Code, open the source control panel and make note of the uncommitted changes.
 
 1. Hover over the **Changes** section to show various icons. Click the **Code Review** button.
 
-   <img width="500" alt="screenshot of source control panel with arrow pointing at button for copilot review" src="(pending)"/>
+   <img width="300" alt="screenshot of site with announcement banner" src="https://github.com/user-attachments/assets/6c52d550-d67b-4af9-99dd-e181695a4933"/>
 
    > 💡 **TIP:** There are 3 levels of review available: `unstaged changes` and `staged changes` and `uncommitted changes`
 
-1. In VS Code, open the **Problems** panel to find a list of all comments from Copilot.
+1. In VS Code, open the **Comments** panel to find a list of review feedback from Copilot.
 
-   <img width="500" alt="screenshot of problems control panel with comments from Copilot" src="(pending)"/>
+   <img width="300" alt="screenshot of problems control panel with comments from Copilot" src="https://github.com/user-attachments/assets/64c5efb6-9071-4511-b2a2-2dc85c9e929b"/>
 
-1. Use the **Accept** or **Reject** buttons to address Copilot's feedback.
+1. Use the **Apply** or **Discard** buttons to address Copilot's feedback.
 
-   <img width="500" alt="screenshot of inline comment with buttons to address feedback" src="(pending)"/>
+   <img width="300" alt="screenshot of inline comment with buttons to address feedback" src="https://github.com/user-attachments/assets/aef73097-acaf-4f5b-a52f-52a142bb413f"/>
 
-1. Commit and push the changes.
+1. Commit and push the Announcement related changes.
 
-1. With the changes pushed, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+1. With your changes pushed, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>

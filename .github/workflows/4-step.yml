@@ -62,6 +62,7 @@ jobs:
         run: |
           # Use GitHub API to check for rulesets
           response=$(gh api repos/${{ github.repository }}/rulesets --jq '.[].name' 2>/dev/null || echo "")
+          echo $response
           if echo "$response" | grep -i "copilot" || echo "$response" | grep -i "review"; then
             echo "ruleset_exists=true" >> $GITHUB_OUTPUT
           else
@@ -134,3 +135,4 @@ jobs:
     with:
       issue-url: ${{ needs.find_exercise.outputs.issue-url }}
       exercise-title: "GitHub Copilot Code Review"
+      update-readme-with-congratulations: false

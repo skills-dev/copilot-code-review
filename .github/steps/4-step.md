@@ -29,7 +29,7 @@ For more information, see the [repository rulesets documentation](https://docs.g
 
 1. In the left navigation, expand **Rules** and select **Rulesets**.
 
-1. Click **New ruleset** and select **New branch ruleset**.
+1. Click the **New ruleset** button and select the **New branch ruleset** option.
 
 1. Set the ruleset name and status:
 
@@ -42,7 +42,7 @@ For more information, see the [repository rulesets documentation](https://docs.g
    1. Click **Add target** and **Include by pattern**.
    1. Enter `main` and click the **Add inclusion pattern** button.
 
-   > 💡 **Tip**: Make sure you are triggering reviews at the right times in development. Both too early and too later will provide unhelpful results.
+   <img width="300" alt="screenshot of target branches" src="https://github.com/user-attachments/assets/217f205c-7a61-4ffa-a0a6-7e76ff8d7906"/>
 
 1. Under **Rules**, enable the following options:
 
@@ -52,15 +52,19 @@ For more information, see the [repository rulesets documentation](https://docs.g
 
 1. Scroll to the bottom and click the **Create** button.
 
-### ⌨️ Activity: Verify required review
-
-1. Navigate back to the pull request.
+1. Return to the open pull request.
 
 1. Notice that the merge button is now disabled.
 
-1. Resolve the remaining feedback from Copilot.
+   <img width="300" alt="screenshot of disabled merge button" src="https://github.com/user-attachments/assets/28e4cb05-f09d-423d-8c77-8f0ec61c73ad"/>
+
+1. Click **Resolve conversation** for all current and outdated feedback from Copilot. It is not necessary to implement anything.
 
 1. Merge the pull request.
+
+   > 💡 **Tip**: If the **Merge pull request** button doesn't activate, check for unresolved conversations in the outdated comments.
+
+1. With the pull requested merged, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 
 ### ⌨️ Activity: (optional) Test required review
 
@@ -100,6 +104,8 @@ For more information, see the [repository rulesets documentation](https://docs.g
 1. (optional) Address any comments from Copilot.
 
 1. Merge the pull request.
+
+1. With the review requested, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 
 <!--
 <details>

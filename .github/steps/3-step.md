@@ -19,14 +19,20 @@ Instructions are written in natural language with Markdown format and typically 
 - Team-specific preferences and style guides
 - Language-specific review criteria
 
-Path-specific instruction files include [YAML front matter](https://docs.github.com/en/contributing/writing-for-github-docs/using-yaml-frontmatter) with file [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns) to target specific files and directories.
+Path-specific instruction files include [YAML front matter](https://docs.github.com/en/contributing/writing-for-github-docs/using-yaml-frontmatter) with file [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns) to target specific files and directories. Examples:
 
 ```yaml
 ---
-applicable_files:
-  - "*.py"
-  - "backend/**/*"
+applyTo: "tests/**/**,docs/*.md"
 ---
+# Testing Guidelines ...
+```
+
+```yaml
+---
+applyTo: "docs/*.md,README.md"
+---
+# Documentation Guidelines ...
 ```
 
 > [!TIP]
@@ -36,9 +42,9 @@ applicable_files:
 
 Let's customize Copilot's review considerations by adding custom instructions.
 
-1. Ensure you are still on the `add-announcement-banner` branch.
+1. In VS Code, ensure you are still on the `add-announcement-banner` branch.
 
-1. Create a new file called `.github/copilot-instructions.md`. Add the following content.
+1. Create a new file named `.github/copilot-instructions.md` and add the following content.
 
    ```markdown
    ## Security
@@ -62,12 +68,11 @@ Let's create specific Copilot's review considerations for the frontend and backe
 
 1. Create `.github/instructions/frontend.instructions.md` for and add the following content.
 
+   > ❗️ **Important**: Make sure to put file-specific instructions in the `.github/instructions/` folder, not the `.github/` folder.
+
    ```markdown
    ---
-   applicable_files:
-     - "*.html"
-     - "*.css"
-     - "*.js"
+   applyTo: "*.html,*.css,*.js"
    ---
 
    ## Frontend Guidelines
@@ -81,9 +86,7 @@ Let's create specific Copilot's review considerations for the frontend and backe
 
 ```markdown
 ---
-applicable_files:
-  - "backend/**/*"
-  - "*.py"
+applyTo: "backend/**/*,*.py"
 ---
 
 ## Backend Guidelines
