@@ -4,21 +4,21 @@ _Leverage GitHub Copilot code review to promote code quality and catch issues be
 
 ## Welcome
 
-- **Who is this for**: Developers familiar with GitHub Copilot who want to improve their code review workflow
+- **Who is this for**: Developers familiar with GitHub Copilot who want to scale code review
 - **What you'll learn**: How to use GitHub Copilot for automated code reviews, customize review criteria, and set up automatic reviews
-- **What you'll build**: You'll work with a Mergington High School extracurricular activities website and implement code reviews for yourself and fellow teachers. By the end, you will have a system that automatically reviews all pull requests and provides consistent feedback based on the school's coding standards.
+- **What you'll build**: You'll update the Mergington High School extracurricular activities website and customize Copilot to automtically review pull requests for you, enabling more teachers to contribute.
 - **Prerequisites**:
 
-  - GitHub Copilot subscription (a paid plan required)
+  - GitHub Copilot subscription (paid plan is required)
   - Familiarity with reviewing code in pull requests
-  - [Introduction to GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot) Skills exercise
+  - Skills Exercise: [Introduction to GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot)
 
-- **How long**: This exercise takes less than 2 hours to complete.
+- **How long**: This exercise takes less than 1 hour to complete.
 
 In this exercise, you will:
 
 1. Use GitHub Copilot to review code directly in VS Code for immediate feedback
-1. Request Copilot code reviews on pull requests to catch issues before merging
+1. Request Copilot code reviews on pull requests
 1. Customize Copilot's review considerations with repository-specific instructions
 1. Configure automatic code reviews using repository rulesets
 
