@@ -60,10 +60,12 @@ jobs:
         continue-on-error: true
         run: |
           # Check if @copilot was requested as a reviewer
-          if gh pr view ${{ github.event.pull_request.number }} --json reviewDecision,reviewRequests,reviews | grep -q "copilot-pull-request-reviewer"; then
+          response=$(gh pr view ${{ github.event.pull_request.number }} --json reviewDecision,reviewRequests,reviews)
+          if echo "$response" | grep -q "copilot-pull-request-reviewer"; then
             echo "copilot_assigned=true" >> $GITHUB_OUTPUT
           else
             echo "copilot_assigned=false" >> $GITHUB_OUTPUT
+            echo "Response from GitHub API: $response"
             exit 1
           fi
         env:
