@@ -42,13 +42,6 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 
 1. With the review requested, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 
-> [!TIP]
-> You can also use the GitHub CLI to assign Copilot as a reviewer!
->
-> ```bash
-> gh pr edit <PR_NUMBER> --add-reviewer "@copilot"
-> ```
-
 ### ⌨️ Activity: (optional) Implement Copilot's feedback
 
 1. (optional) Review Copilot's suggestions and implement them.
