@@ -42,23 +42,6 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 
 1. With the review requested, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 
-### ⌨️ Activity: (optional) Implement Copilot's feedback
-
-1. (optional) Review Copilot's suggestions and implement them.
-
-<!--
-### ⌨️ Activity: Request another review
-
-1. Based on the existing sample project, make some intentional changes that might trigger feedback:
-   - Add some typos or unconventional variable naming
-   - Introduce some grammar mistakes in comments
-   - Add a coding pattern that could be improved
-1. Push these changes to your branch
-1. In the pull request reviewers menu, click the refresh icon next to Copilot's name to request a new review
-1. Wait for Copilot to share additional comments on the pull request
-1. Compare the new feedback with previous suggestions to see how Copilot adapts
-1. -->
-
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
