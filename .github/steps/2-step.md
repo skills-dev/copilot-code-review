@@ -32,7 +32,7 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 
 1. In the right-side details area, find the **Reviewers** menu. Click on the **settings icon** to show a list of available reviewers and select **Copilot**.
 
-   <img width="300" alt="screenshot of reviewers menu" src="2a.png"/>
+   <img width="300" alt="screenshot of reviewers menu" src="https://github.com/user-attachments/assets/0f9f2e86-51b7-4542-82a1-afb6a22ab3ca"/>
 
 1. Wait a moment for Copilot to review the changes and add comments to your pull request.
 
