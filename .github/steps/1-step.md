@@ -85,25 +85,23 @@ Lets add a simple banner feature for teachers to make announcements and then ask
 
 1. (optional) Refresh the running app to see the change.
 
-   <img width="400" alt="screenshot of site with announcement banner" src="1a.png"/>
+   <img width="400" alt="screenshot of site with announcement banner" src="https://github.com/user-attachments/assets/39de7fe0-58f2-4eba-a163-d3037b2b3b06"/>
 
 1. In VS Code, open the source control panel and make note of the uncommitted changes.
 
-   <img width="300" alt="screenshot of site with announcement banner" src="1b.png"/>
-
 1. Hover over the **Changes** section to show various icons. Click the **Code Review** button.
 
-   <img width="500" alt="screenshot of source control panel with arrow pointing at button for copilot review" src="(pending)"/>
+   <img width="300" alt="screenshot of site with announcement banner" src="https://github.com/user-attachments/assets/6c52d550-d67b-4af9-99dd-e181695a4933"/>
 
    > 💡 **TIP:** There are 3 levels of review available: `unstaged changes` and `staged changes` and `uncommitted changes`
 
 1. In VS Code, open the **Comments** panel to find a list of review feedback from Copilot.
 
-   <img width="300" alt="screenshot of problems control panel with comments from Copilot" src="1c.png"/>
+   <img width="300" alt="screenshot of problems control panel with comments from Copilot" src="https://github.com/user-attachments/assets/64c5efb6-9071-4511-b2a2-2dc85c9e929b"/>
 
 1. Use the **Apply** or **Discard** buttons to address Copilot's feedback.
 
-   <img width="300" alt="screenshot of inline comment with buttons to address feedback" src="1d.png"/>
+   <img width="300" alt="screenshot of inline comment with buttons to address feedback" src="https://github.com/user-attachments/assets/aef73097-acaf-4f5b-a52f-52a142bb413f"/>
 
 1. Commit and push the Announcement related changes.
 
