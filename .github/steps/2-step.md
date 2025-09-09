@@ -22,19 +22,23 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 
 ### ⌨️ Activity: Request a review
 
-1. If needed, open a another tab and for this exercise repository.
+1. If needed, open a another tab for this exercise repository.
 
 1. Start a new pull request. Enter the following details and click the **Create pull request** button.
 
    - **compare:** `add-announcement-banner`
    - **target:** `main`
-   - **title:** `Add Announcement Banner`
+   - **title:** `Add announcement banner`
 
 1. In the right-side details area, find the **Reviewers** menu. Click on the **settings icon** to show a list of available reviewers and select **Copilot**.
 
    <img width="300" alt="screenshot of reviewers menu" src="https://github.com/user-attachments/assets/0f9f2e86-51b7-4542-82a1-afb6a22ab3ca"/>
 
-1. Wait a moment for Copilot to review the changes and add comments to your pull request.
+1. Wait a moment for Copilot to review the changes and add comments to your pull request. Notice an entry was added to the conversation log.
+
+   <img width="300" alt="new log entry - requested review from copilot" src="2a.png"/>
+
+   <img width="300" alt="new log entry - copilot's review summary" src="2b.png"/>
 
 1. With the review requested, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 
