@@ -87,7 +87,7 @@ Lets add a simple banner feature for teachers to make announcements and then ask
 
    <img width="400" alt="screenshot of site with announcement banner" src="https://github.com/user-attachments/assets/39de7fe0-58f2-4eba-a163-d3037b2b3b06"/>
 
-1. Open the source control panel and make note of the uncommitted changes.
+1. In VS Code, open the source control panel and make note of the uncommitted changes.
 
 1. Hover over the **Changes** section to show various icons. Click the **Code Review** button and wait a moment for Copilot to add comments.
 

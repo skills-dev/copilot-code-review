@@ -70,6 +70,8 @@ Let's create specific Copilot's review considerations for the frontend and backe
 
    > ❗️ **Important**: Make sure to put file-specific instructions in the `.github/instructions/` folder, not the `.github/` folder.
 
+   > ❗️ **Important**: Make sure to put file-specific instructions in the `.github/instructions/` folder, not the `.github/` folder.
+
    ```markdown
    ---
    applyTo: "*.html,*.css,*.js"
