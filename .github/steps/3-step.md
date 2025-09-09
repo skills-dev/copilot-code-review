@@ -70,8 +70,6 @@ Let's create specific Copilot's review considerations for the frontend and backe
 
    > ❗️ **Important**: Make sure to put file-specific instructions in the `.github/instructions/` folder, not the `.github/` folder.
 
-   > ❗️ **Important**: Make sure to put file-specific instructions in the `.github/instructions/` folder, not the `.github/` folder.
-
    ```markdown
    ---
    applyTo: "*.html,*.css,*.js"
@@ -100,7 +98,7 @@ applyTo: "backend/**/*,*.py"
 - Verify changes in the backend are reflected in the frontend (`src/static/**`). If possible breaking changes are found, mention them to the developer.
 ```
 
-1. Commit and push the changes.
+1. Commit and push the instruction files.
 
 > [!TIP]
 > VS Code has a built-in commands to help manage instructions. Try opening the command pallette and searching for `instructions`.
@@ -113,22 +111,10 @@ With our new instructions defined, Copilot now has a better idea of what is impo
 
 1. In the top right, find the **Reviewers** menu and **Re-request review** button next to **Copilot**. Click it and wait a moment for Copilot to add comments on the pull request.
 
-   <img width="300" alt="screenshot of re-review button" src="https://github.com/user-attachments/assets/e6fdc77c-3323-466b-8d30-f9a8eb543f3f"/>
+   <img width="300" alt="screenshot of re-review button" src="https://github.com/user-attachments/assets/c45aa8de-278d-46e7-bfe2-2dc6b574e11e"/>
 
-   > 🪧 **Note:** If you are too quick after pushing new commits, you may have to wait a moment for the button to appear.
+   > 🪧 **Note:** If you are too quick after pushing new commits, you may have to wait a moment for the button to appear, or refresh the page.
 
 1. Observe that Copilot's feedback now differs from the previous review.
 
 1. With the review requested, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
-
-### ⌨️ Activity: (optional) Implement Copilot's feedback
-
-1. (optional) Review Copilot's suggestions and implement them.
-
-<details>
-<summary>Having trouble? 🤷</summary><br/>
-
-- Make sure instruction files are in the `.github/` directory and use the `.instructions.md` file extension.
-
-</details>
-````

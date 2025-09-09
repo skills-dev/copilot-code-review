@@ -62,12 +62,12 @@ jobs:
           text-file: src/static/index.html
           keyphrase: announcement
 
-      - name: Check style.css for keyphrase
-        id: check-style-css
+      - name: Check styles.css for keyphrase
+        id: check-styles-css
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v1.1.0
         with:
-          text-file: src/static/style.css
+          text-file: src/static/styles.css
           keyphrase: announcement-banner
 
       - name: Update comment - step results
@@ -83,8 +83,8 @@ jobs:
             results_table:
               - description: "announcement added to index.html"
                 passed: ${{ steps.check-index-html.outcome == 'success' }}
-              - description: "announcement added to style.css"
-                passed: ${{ steps.check-style-css.outcome == 'success' }}
+              - description: "announcement added to styles.css"
+                passed: ${{ steps.check-styles-css.outcome == 'success' }}
 
       - name: Fail job if not all checks passed
         if: contains(steps.*.outcome, 'failure')

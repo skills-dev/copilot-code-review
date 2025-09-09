@@ -68,9 +68,9 @@ For more information, see the [repository rulesets documentation](https://docs.g
 
 ### ⌨️ Activity: (optional) Test required review
 
-Not ready to finish yet? Are you concerned by the hard coded announcement banner?
+Not ready to finish yet? Are you concerned by the hard coded announcement banner? Us too!
 
-Us too! So, let's fix it! 🧑‍🚀🚀
+So... let's fix it! 🧑‍🚀🚀
 
 1. In VS Code, switch back to the `main` branch, pull the merged changes, and delete the `add-announcement-banner` branch.
 
