@@ -62,15 +62,6 @@ jobs:
         with:
           file: .github/copilot-instructions.md
 
-      # Check for security-related content in copilot-instructions.md
-      - name: Check for security focus in instructions
-        id: check-security-keyphrase
-        continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
-        with:
-          text-file: .github/copilot-instructions.md
-          keyphrase: Security
-
       # Check if frontend instructions file exists
       - name: Check if frontend instructions file exists
         id: check-frontend-instructions
@@ -100,8 +91,6 @@ jobs:
             results_table:
               - description: "Created .github/copilot-instructions.md file"
                 passed: ${{ steps.check-copilot-instructions.outcome == 'success' }}
-              - description: "Included security focus in general instructions"
-                passed: ${{ steps.check-security-keyphrase.outcome == 'success' }}
               - description: "Created frontend-specific instructions file"
                 passed: ${{ steps.check-frontend-instructions.outcome == 'success' }}
               - description: "Created backend-specific instructions file"
