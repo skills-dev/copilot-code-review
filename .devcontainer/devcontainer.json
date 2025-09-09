@@ -11,9 +11,7 @@
       "extensions": [
         "GitHub.copilot",
         "ms-python.python",
-        "ms-python.debugpy",
-        "mongodb.mongodb-vscode"
-      ]
+        "ms-python.debugpy"      ]
     }
   }
 }

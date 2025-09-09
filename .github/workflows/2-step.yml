@@ -59,13 +59,25 @@ jobs:
         id: check-copilot-reviewer
         continue-on-error: true
         run: |
-          # Check if @copilot was requested as a reviewer
-          if gh pr view ${{ github.event.pull_request.number }} --json reviewDecision,reviewRequests,reviews | grep -q "copilot-pull-request-reviewer"; then
-            echo "copilot_assigned=true" >> $GITHUB_OUTPUT
-          else
-            echo "copilot_assigned=false" >> $GITHUB_OUTPUT
+          # Check if Copilot was requested as a reviewer. Try up to 5 seconds.
+          for i in {1..5}; do
+            # Query API
+            response=$(gh pr view ${{ github.event.pull_request.number }} --json reviewDecision,reviewRequests,reviews)
+            echo "Response from GitHub API (attempt $i): $response"
+            
+            # Check response for Copilot as a reviewer. If not found, wait and retry.
+            if echo "$response" | grep -q "copilot-pull-request-reviewer"; then
+              break
+            else
+              echo "Copilot not found as reviewer yet, retrying..."
+              sleep 1
+              continue
+            fi
+
+            # If this is the last attempt, exit the loop
+            echo "Copilot was not assigned as a reviewer after multiple attempts."
             exit 1
-          fi
+          done
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
