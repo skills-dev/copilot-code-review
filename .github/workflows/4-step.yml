@@ -55,12 +55,12 @@ jobs:
           file: exercise-toolkit/markdown-templates/step-feedback/checking-work.md
           edit-mode: replace
 
-      # Check if a repository ruleset exists
       - name: Check if repository ruleset exists
+        if: ${{ github.event.repository.private == false }}
         id: check-ruleset
         continue-on-error: true
         run: |
-          # Use GitHub API to check for rulesets
+          # Use GitHub API to check for rulesets (only available for public repositories)
           response=$(gh api repos/${{ github.repository }}/rulesets --jq '.[].name' 2>/dev/null || echo "")
           echo $response
           if echo "$response" | grep -i "copilot" || echo "$response" | grep -i "review"; then
@@ -73,6 +73,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update comment - step results
+        if: ${{ github.event.repository.private == false }}
         uses: GrantBirki/comment@v2.1.1
         with:
           repository: ${{ env.ISSUE_REPOSITORY }}
