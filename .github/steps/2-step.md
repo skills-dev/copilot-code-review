@@ -38,7 +38,7 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 
    <img width="300" alt="new log entry - requested review from copilot" src="https://github.com/user-attachments/assets/3e522bda-e68e-4469-93f4-a7ad103cca97"/>
 
-   <img width="300" alt="new log entry - copilot's review summary" src="https://github.com/user-attachments/assets/0a870950-560e-4df8-80d5-2b93f1be99ab"/>
+   <img width="500" alt="new log entry - copilot's PR summary" src="https://github.com/user-attachments/assets/0a870950-560e-4df8-80d5-2b93f1be99ab"/>
 
 1. With the review requested, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 

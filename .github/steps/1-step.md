@@ -87,7 +87,7 @@ Lets add a simple banner feature for teachers to make announcements and then ask
 
    <img width="400" alt="screenshot of site with announcement banner" src="https://github.com/user-attachments/assets/39de7fe0-58f2-4eba-a163-d3037b2b3b06"/>
 
-1. In VS Code, open the source control panel and make note of the uncommitted changes.
+1. In VS Code, open the source control panel and ensure there are uncommitted changes.
 
 1. Hover over the **Changes** section to show various icons. Click the **Code Review** button and wait a moment for Copilot to add comments.
 
@@ -103,7 +103,7 @@ Lets add a simple banner feature for teachers to make announcements and then ask
 
    <img width="300" alt="screenshot of inline comment with buttons to address feedback" src="https://github.com/user-attachments/assets/aef73097-acaf-4f5b-a52f-52a142bb413f"/>
 
-1. Commit and push the Announcement related changes.
+1. Commit and push the Announcement related changes to the `add-announcement-banner` branch.
 
 1. With your changes pushed, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 
