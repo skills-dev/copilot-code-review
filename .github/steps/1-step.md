@@ -1,10 +1,10 @@
 ## Step 1: Ask for a Review in VS Code
 
-In the [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot/) exercise, we developed the Extracurricular Activities website. Let's continue that journey.
+Mergington High School has an Extracurricular Activities website. In the last months, you have added lots of features and it has become increasingly well used by your fellow staff and students.
 
-Word has spread about the activities website, and now multiple teachers want to help develop new features. This is great, but your energy is limited and if you don't have time to review changes, you fear the application will become messy. To scale your "review" availability, let's implement **GitHub Copilot code review**!
+Now, multiple teachers want to help develop new features. This is great, but your energy is limited and if you don't have time to review changes, you fear the application will become messy. To scale your "review" availability, let's implement **GitHub Copilot code review**!
 
-Before we implement automated code reviews with Copilot, it makes sense to see try it locally in VS Code. This will help us better understand it and ensure all teacher-collaborators receive consistent feedback when they start contributing.
+Before we implement automated code reviews with Copilot, it makes sense to try reviews locally in VS Code. This will help us better understand it, build our review criteria, and ensure all teacher-collaborators receive consistent feedback when they start contributing.
 
 ### 📖 Theory: GitHub Copilot Local Code Review
 

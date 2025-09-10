@@ -11,7 +11,8 @@ _Leverage GitHub Copilot code review to promote code quality and catch issues be
 
   - GitHub Copilot subscription (paid plan is required)
   - Familiarity with reviewing code in pull requests
-  - Skills Exercise: [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot)
+  - Familiarity with Codespaces, or [Code with Codespaces](https://github.com/skills-dev/code-with-codespaces) Skills exercise
+  - Familiarity with GitHub Copilot, or [Getting Started with GitHub](https://github.com/skills/getting-started-with-github-copilot) Skills exercise
 
 - **How long**: This exercise takes less than 1 hour to complete.
 
