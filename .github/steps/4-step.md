@@ -6,7 +6,7 @@ The tailored reviews seem to be working great, however there's a problem. They a
 
 Repository rulesets allow you to enforce automatic code reviews on all pull requests, ensuring consistent quality checks without relying on developers to manually request reviews or remember to follow documentation.
 
-Each code review consumes one Premium Request Unit (PRU) from the author of the pull request.
+Each code review consumes one [Premium Request Unit (PRU)](https://docs.github.com/en/copilot/concepts/billing/copilot-requests) from the author of the pull request.
 
 **Enforcement Options:**
 
