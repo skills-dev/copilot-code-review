@@ -44,7 +44,15 @@ Let's customize Copilot's review considerations by adding custom instructions.
 
 1. In VS Code, ensure you are still on the `add-announcement-banner` branch.
 
-1. Create a new file named `.github/copilot-instructions.md` and add the following content.
+1. Create a file for general repository guidelines.
+
+   File location and name:
+
+   ```txt
+   .github/copilot-instructions.md
+   ```
+
+   Content:
 
    ```markdown
    ## Security
@@ -66,9 +74,17 @@ Let's customize Copilot's review considerations by adding custom instructions.
 
 Let's create specific Copilot's review considerations for the frontend and backend.
 
-1. Create `.github/instructions/frontend.instructions.md` and add the following guidelines.
+1. Create a file for the frontend-specific guidelines.
 
    > ❗️ **Important**: Make sure to put file-specific instructions in the `.github/instructions/` folder, not the `.github/` folder.
+
+   File location and name:
+
+   ```txt
+   .github/instructions/frontend.instructions.md
+   ```
+
+   Content:
 
    ```markdown
    ---
@@ -82,21 +98,29 @@ Let's create specific Copilot's review considerations for the frontend and backe
    - Validate HTML structure and semantic elements
    ```
 
-1. Create `.github/instructions/backend.instructions.md` and add the following guidelines:
+1. Create a file for the backend-specific guidelines.
 
-```markdown
----
-applyTo: "backend/**/*,*.py"
----
+   File location and name:
 
-## Backend Guidelines
+   ```txt
+   .github/instructions/backend.instructions.md
+   ```
 
-- All API endpoints must be defined in the `routers` folder.
-- Load example database content from the `database.py` file.
-- Error handling is only logged on the server. Do not propagate to the frontend.
-- Ensure all APIs are explained in the documentation.
-- Verify changes in the backend are reflected in the frontend (`src/static/**`). If possible breaking changes are found, mention them to the developer.
-```
+   Content:
+
+   ```markdown
+   ---
+   applyTo: "backend/**/*,*.py"
+   ---
+
+   ## Backend Guidelines
+
+   - All API endpoints must be defined in the `routers` folder.
+   - Load example database content from the `database.py` file.
+   - Error handling is only logged on the server. Do not propagate to the frontend.
+   - Ensure all APIs are explained in the documentation.
+   - Verify changes in the backend are reflected in the frontend (`src/static/**`). If possible breaking changes are found, mention them to the developer.
+   ```
 
 1. Commit and push the instruction files.
 
