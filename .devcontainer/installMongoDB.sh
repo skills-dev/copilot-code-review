@@ -9,13 +9,3 @@ sudo apt-get install -y mongodb-org
 # Create necessary directories and set permissions
 sudo mkdir -p /data/db
 sudo chown -R mongodb:mongodb /data/db
-
-# Start MongoDB service
-sudo mongod --fork --logpath /var/log/mongodb/mongod.log
-
-echo "MongoDB has been installed and started successfully!"
-mongod --version
-
-# Run sample MongoDB commands
-echo "Current databases:"
-mongosh --eval "db.getMongo().getDBNames()"
