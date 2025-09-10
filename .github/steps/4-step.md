@@ -25,8 +25,6 @@ For more information, see the [repository rulesets documentation](https://docs.g
 
 ### ⌨️ Activity: Create a repository ruleset
 
-1. In the web browser, return to the exercise repository.
-
 1. In the top navigation, select the **Settings** tab.
 
 1. In the left navigation, expand **Rules** and select **Rulesets**.
@@ -66,7 +64,7 @@ For more information, see the [repository rulesets documentation](https://docs.g
 
    > 🪧 **Note**: If the **Merge pull request** button doesn't activate, check for unresolved conversations in the outdated comments.
 
-1. With the pull request merged, wait a moment for Mona to check your work, provide feedback, and provide a final review.
+1. With the pull request merged, wait a moment for Mona to check your work, provide feedback, and provide a final review. Nice work! You are all done! 🎉
 
 ### ⌨️ Activity: (optional) Test automatic reviews
 
