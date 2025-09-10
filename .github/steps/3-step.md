@@ -44,7 +44,15 @@ Let's customize Copilot's review considerations by adding custom instructions.
 
 1. In VS Code, ensure you are still on the `add-announcement-banner` branch.
 
-1. Create a new file named `.github/copilot-instructions.md` and add the following content.
+1. Create a file for general repository guidelines.
+
+   File location and name:
+
+   ```txt
+   .github/copilot-instructions.md
+   ```
+
+   Content:
 
    ```markdown
    ## Security
@@ -66,9 +74,17 @@ Let's customize Copilot's review considerations by adding custom instructions.
 
 Let's create specific Copilot's review considerations for the frontend and backend.
 
-1. Create `.github/instructions/frontend.instructions.md` and add the following guidelines.
+1. Create a file for the frontend-specific guidelines.
 
    > ❗️ **Important**: Make sure to put file-specific instructions in the `.github/instructions/` folder, not the `.github/` folder.
+
+   File location and name:
+
+   ```txt
+   .github/instructions/frontend.instructions.md
+   ```
+
+   Content:
 
    ```markdown
    ---
@@ -82,21 +98,29 @@ Let's create specific Copilot's review considerations for the frontend and backe
    - Validate HTML structure and semantic elements
    ```
 
-1. Create `.github/instructions/backend.instructions.md` and add the following guidelines:
+1. Create a file for the backend-specific guidelines.
 
-```markdown
----
-applyTo: "backend/**/*,*.py"
----
+   File location and name:
 
-## Backend Guidelines
+   ```txt
+   .github/instructions/backend.instructions.md
+   ```
 
-- All API endpoints must be defined in the `routers` folder.
-- Load example database content from the `database.py` file.
-- Error handling is only logged on the server. Do not propagate to the frontend.
-- Ensure all APIs are explained in the documentation.
-- Verify changes in the backend are reflected in the frontend (`src/static/**`). If possible breaking changes are found, mention them to the developer.
-```
+   Content:
+
+   ```markdown
+   ---
+   applyTo: "backend/**/*,*.py"
+   ---
+
+   ## Backend Guidelines
+
+   - All API endpoints must be defined in the `routers` folder.
+   - Load example database content from the `database.py` file.
+   - Error handling is only logged on the server. Do not propagate to the frontend.
+   - Ensure all APIs are explained in the documentation.
+   - Verify changes in the backend are reflected in the frontend (`src/static/**`). If possible breaking changes are found, mention them to the developer.
+   ```
 
 1. Commit and push the instruction files.
 
@@ -107,7 +131,9 @@ applyTo: "backend/**/*,*.py"
 
 With our new instructions defined, Copilot now has a better idea of what is important for our project. Let's ask for another review.
 
-1. Ensure the instructions are indeed committed and push to the repository.
+1. In VS Code, Ensure the instructions are indeed committed and push to the repository.
+
+1. In the web browser, return to the recently created pull request.
 
 1. In the top right, find the **Reviewers** menu and **Re-request review** button next to **Copilot**. Click it and wait a moment for Copilot to add comments on the pull request.
 
@@ -118,3 +144,10 @@ With our new instructions defined, Copilot now has a better idea of what is impo
 1. Observe that Copilot's feedback now differs from the previous review.
 
 1. With the review requested, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+
+<details>
+<summary>Having trouble? 🤷</summary><br/>
+
+- If you forgot to add a custom instruction (or made a typo), try fixing the mistake and asking Copilot for another review. This will inform Mona to check your work again.
+
+</details>

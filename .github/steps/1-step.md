@@ -1,10 +1,10 @@
 ## Step 1: Ask for a Review in VS Code
 
-In the [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot/) exercise, we developed the Extracurricular Activities website. Let's continue that journey.
+Mergington High School has an Extracurricular Activities website. In the last months, you have added lots of features and it has become increasingly well used by your fellow staff and students.
 
-Word has spread about the activities website, and now multiple teachers want to help develop new features. This is great, but your energy is limited and if you don't have time to review changes, you fear the application will become messy. To scale your "review" availability, let's implement **GitHub Copilot code review**!
+Now, multiple teachers want to help develop new features. This is great, but your energy is limited and if you don't have time to review changes, you fear the application will become messy. To scale your "review" availability, let's implement **GitHub Copilot code review**!
 
-Before we implement automated code reviews with Copilot, it makes sense to see try it locally in VS Code. This will help us better understand it and ensure all teacher-collaborators receive consistent feedback when they start contributing.
+Before we implement automated code reviews with Copilot, it makes sense to try reviews locally in VS Code. This will help us better understand it, build our review criteria, and ensure all teacher-collaborators receive consistent feedback when they start contributing.
 
 ### 📖 Theory: GitHub Copilot Local Code Review
 
@@ -87,7 +87,7 @@ Lets add a simple banner feature for teachers to make announcements and then ask
 
    <img width="400" alt="screenshot of site with announcement banner" src="https://github.com/user-attachments/assets/39de7fe0-58f2-4eba-a163-d3037b2b3b06"/>
 
-1. In VS Code, open the source control panel and make note of the uncommitted changes.
+1. In VS Code, open the source control panel and ensure there are uncommitted changes.
 
 1. Hover over the **Changes** section to show various icons. Click the **Code Review** button and wait a moment for Copilot to add comments.
 
@@ -103,7 +103,7 @@ Lets add a simple banner feature for teachers to make announcements and then ask
 
    <img width="300" alt="screenshot of inline comment with buttons to address feedback" src="https://github.com/user-attachments/assets/aef73097-acaf-4f5b-a52f-52a142bb413f"/>
 
-1. Commit and push the Announcement related changes.
+1. Commit and push the Announcement related changes to the `add-announcement-banner` branch.
 
 1. With your changes pushed, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
 

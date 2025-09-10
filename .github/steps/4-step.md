@@ -6,7 +6,7 @@ The tailored reviews seem to be working great, however there's a problem. They a
 
 Repository rulesets allow you to enforce automatic code reviews on all pull requests, ensuring consistent quality checks without relying on developers to manually request reviews or remember to follow documentation.
 
-Each code review consumes one Premium Request Unit (PRU) from the author of the pull request.
+Each code review consumes one [Premium Request Unit (PRU)](https://docs.github.com/en/copilot/concepts/billing/copilot-requests) from the author of the pull request.
 
 **Enforcement Options:**
 
@@ -47,8 +47,8 @@ For more information, see the [repository rulesets documentation](https://docs.g
 1. Under **Rules**, enable the following options:
 
    - **Require a pull request before merging**: ☑️
-   - **Automatically request Copilot code review**: ☑️
    - **Require conversation resolution before merging**: ☑️
+   - **Automatically request Copilot code review**: ☑️
 
 1. Scroll to the bottom and click the **Create** button.
 
@@ -64,23 +64,28 @@ For more information, see the [repository rulesets documentation](https://docs.g
 
    > 🪧 **Note**: If the **Merge pull request** button doesn't activate, check for unresolved conversations in the outdated comments.
 
-1. With the pull request merged, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+1. With the pull request merged, wait a moment for Mona to check your work, provide feedback, and provide a final review. Nice work! You are all done! 🎉
 
-### ⌨️ Activity: (optional) Test required review
+### ⌨️ Activity: (optional) Test automatic reviews
 
 Not ready to finish yet? Are you concerned by the hard coded announcement banner? Us too!
 
 So... let's fix it! 🧑‍🚀🚀
 
+> [!NOTE]
+> You don't need "fix" the new Announcement feature. If you just want to test automatic reviews, you can just make a quick small change and start a new pull request.
+
 1. In VS Code, switch back to the `main` branch, pull the merged changes, and delete the `add-announcement-banner` branch.
 
-1. Create a new branch with the following name.
+1. Create a new branch from `main` with the following name.
 
    ```txt
    enable-editing-announcements
    ```
 
-1. Open the Copilot Chat panel and ask Copilot to upgrade our new Announcements feature.
+1. Open the Copilot Chat panel and ensure it is in **Agent mode**. Use the following prompt to ask Copilot to upgrade our new Announcements feature.
+
+   > 💡 **Tip**: The premium models (that use PRUs) are typically more robust and will require less, or no, followup prompts for refinement.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -96,7 +101,7 @@ So... let's fix it! 🧑‍🚀🚀
    > - Make it pretty with a good UI/UX experience.
    > ```
 
-1. (optional) Run the application to test the changes.
+1. (optional) Run the application to test the changes and provide followup prompts to Copilot for further refinement.
 
 1. (optional) Before committing the changes, ask for a local review in VS Code.
 
