@@ -142,3 +142,10 @@ With our new instructions defined, Copilot now has a better idea of what is impo
 1. Observe that Copilot's feedback now differs from the previous review.
 
 1. With the review requested, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+
+<details>
+<summary>Having trouble? 🤷</summary><br/>
+
+- If you forgot to add a custom instruction (or made a typo), try fixing the mistake and asking Copilot for another review. This will inform Mona to check your work again.
+
+</details>
