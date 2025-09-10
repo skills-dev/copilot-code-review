@@ -21,7 +21,7 @@ jobs:
     uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@v0.7.0
     with:
       exercise-title: "GitHub Copilot Code Review"
-      intro-message: "Welcome! Learn to leverage GitHub Copilot for automated code reviews and maintain high code quality standards."
+      intro-message: "Leverage GitHub Copilot code review to promote code quality and catch issues before they reach production."
 
   post_next_step_content:
     name: Post next step content

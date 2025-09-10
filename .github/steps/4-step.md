@@ -47,8 +47,8 @@ For more information, see the [repository rulesets documentation](https://docs.g
 1. Under **Rules**, enable the following options:
 
    - **Require a pull request before merging**: ☑️
-   - **Automatically request Copilot code review**: ☑️
    - **Require conversation resolution before merging**: ☑️
+   - **Automatically request Copilot code review**: ☑️
 
 1. Scroll to the bottom and click the **Create** button.
 
@@ -64,13 +64,16 @@ For more information, see the [repository rulesets documentation](https://docs.g
 
    > 🪧 **Note**: If the **Merge pull request** button doesn't activate, check for unresolved conversations in the outdated comments.
 
-1. With the pull request merged, wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+1. With the pull request merged, wait a moment for Mona to check your work, provide feedback, and provide a final review.
 
-### ⌨️ Activity: (optional) Test required review
+### ⌨️ Activity: (optional) Test automatic reviews
 
 Not ready to finish yet? Are you concerned by the hard coded announcement banner? Us too!
 
 So... let's fix it! 🧑‍🚀🚀
+
+> [!NOTE]
+> You don't need "fix" the new Announcement feature. If you just want to test automatic reviews, you can just make a quick small change and start a new pull request.
 
 1. In VS Code, switch back to the `main` branch, pull the merged changes, and delete the `add-announcement-banner` branch.
 
@@ -80,7 +83,7 @@ So... let's fix it! 🧑‍🚀🚀
    enable-editing-announcements
    ```
 
-1. Open the Copilot Chat panel and ask Copilot to upgrade our new Announcements feature.
+1. Open the Copilot Chat panel and ensure it is in **Agent mode**. Use the following prompt to ask Copilot to upgrade our new Announcements feature.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
