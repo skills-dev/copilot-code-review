@@ -7,7 +7,7 @@ Now that you've tested Copilot's local review capabilities and made some changes
 GitHub Copilot analyzes your code and provides intelligent feedback with actionable suggestions you can apply instantly. Each code review consumes one [Premium Request Unit (PRU)](https://docs.github.com/en/copilot/concepts/billing/copilot-requests) from the requester.
 
 > [!IMPORTANT]
-> Use [code review responsibly](https://docs.github.com/en/copilot/responsible-use/code-review) - It is familiar with many common security mistakes, but it is not meant to replace dedicated security analysis tools. Use the right tool for the job.
+> Use [code review responsibly](https://docs.github.com/en/copilot/responsible-use/code-review) - Copilot is trained to be familiar with many common security concerns, but it is not meant to replace dedicated security tools, guidelines, and standards. Please use of the correct tools for the job.
 
 **Key Capabilities:**
 
@@ -22,7 +22,7 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 
 ### ⌨️ Activity: Request a review
 
-1. If needed, open a another tab for this exercise repository.
+1. If needed, open a another web browser tab and navigate to this exercise repository.
 
 1. Start a new pull request. Enter the following details and click the **Create pull request** button.
 

@@ -131,7 +131,9 @@ Let's create specific Copilot's review considerations for the frontend and backe
 
 With our new instructions defined, Copilot now has a better idea of what is important for our project. Let's ask for another review.
 
-1. Ensure the instructions are indeed committed and push to the repository.
+1. In VS Code, Ensure the instructions are indeed committed and push to the repository.
+
+1. In the web browser, return to the recently created pull request.
 
 1. In the top right, find the **Reviewers** menu and **Re-request review** button next to **Copilot**. Click it and wait a moment for Copilot to add comments on the pull request.
 

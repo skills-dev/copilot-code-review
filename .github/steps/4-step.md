@@ -25,6 +25,8 @@ For more information, see the [repository rulesets documentation](https://docs.g
 
 ### ⌨️ Activity: Create a repository ruleset
 
+1. In the web browser, return to the exercise repository.
+
 1. In the top navigation, select the **Settings** tab.
 
 1. In the left navigation, expand **Rules** and select **Rulesets**.
@@ -77,13 +79,15 @@ So... let's fix it! 🧑‍🚀🚀
 
 1. In VS Code, switch back to the `main` branch, pull the merged changes, and delete the `add-announcement-banner` branch.
 
-1. Create a new branch with the following name.
+1. Create a new branch from `main` with the following name.
 
    ```txt
    enable-editing-announcements
    ```
 
 1. Open the Copilot Chat panel and ensure it is in **Agent mode**. Use the following prompt to ask Copilot to upgrade our new Announcements feature.
+
+   > 💡 **Tip**: The premium models (that use PRUs) are typically more robust and will require less, or no, followup prompts for refinement.
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -99,7 +103,7 @@ So... let's fix it! 🧑‍🚀🚀
    > - Make it pretty with a good UI/UX experience.
    > ```
 
-1. (optional) Run the application to test the changes.
+1. (optional) Run the application to test the changes and provide followup prompts to Copilot for further refinement.
 
 1. (optional) Before committing the changes, ask for a local review in VS Code.
 
