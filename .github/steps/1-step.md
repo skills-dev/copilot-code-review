@@ -55,7 +55,7 @@ Before we start developing and reviewing, let's take a moment to understand the 
 
 ### ⌨️ Activity: Ask Copilot for a review
 
-Lets add a simple banner feature for teachers to make announcements and then ask Copilot for feedback.
+Let's add a simple banner feature for teachers to make announcements and then ask Copilot for feedback.
 
 1. In VS Code, create a new branch with the following name.
 

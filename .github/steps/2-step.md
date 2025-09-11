@@ -22,7 +22,7 @@ For more information, see the [GitHub Copilot code review documentation](https:/
 
 ### ⌨️ Activity: Request a review
 
-1. If needed, open a another web browser tab and navigate to this exercise repository.
+1. If needed, open another web browser tab and navigate to this exercise repository.
 
 1. Start a new pull request. Enter the following details and click the **Create pull request** button.
 
